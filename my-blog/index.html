@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Blogpost</title>
+</head>
+<body>
+    <header>
+        <button class="mode-button"><img id="modeimg" src="./assets/images/darkandligth-mode.jpg" alt="dark-and-light-mode-button"></button>
+    </header>
+    <main >
+        <section id="container">
+            <section id="first-half">
+                <img id="firstblog" src="./assets/images/100-web-apis-challenge-demo.jpg" alt="my-first-blog-landpage-image">
+            </section>
+            <section id="second-half">
+                <h1>What's on your mind?</h1>
+                <form id="blog-form">
+                    <p>Username</p>
+                    <input id="username" type="text">
+                    <p>Title</p>
+                    <input id="title" type="text">
+                    <p>Content</p>
+                    <textarea id="content"></textarea>
+                    <button id="submt-button" type="submit">Submit</button>
+                    <p id="error-message" class="hidden">Please complete all fields.</p>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+    </footer> 
+    <script src="./assets/js/mode.js"></script>
+    <script src="./assets/js/form.js"></script>
+</body>
+</html>
