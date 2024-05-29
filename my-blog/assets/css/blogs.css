@@ -1,0 +1,106 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: large;
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+header {
+  padding: 10px;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  margin: 0px;
+  padding: 3px;
+  border-top: 3px solid black;
+}
+
+body.dark-mode footer {
+  border-top: 3px solid white;
+}
+
+#back-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+body.dark-mode header {
+  border-bottom: 3px solid white;
+}
+
+#modeimg {
+  height: 20px;
+  width: 20px;
+}
+
+.mode-button {
+  height: 20px;
+  width: 20px;
+  max-width: 10000%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Changes cursor to hand */
+}
+
+#back-button {
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.dark-mode #back-button {
+  color: black;
+  background-color: white;
+}
+
+#posts-container {
+  padding: 5px;
+  margin: 5px 0px 5px 0px;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}
+
+body.dark-mode #posts-container {
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+}
+
+.post {
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+body.dark-mode .post {
+  border-color: white;
+}
+
+#love {
+  justify-content: center;
+  display: flex;
+}
