@@ -4,7 +4,9 @@ A simple blog post application that allows users to create blog posts, view them
 ## Overview
 This project is a basic blog post application. Users can submit blog posts, which are then stored in the browser's localStorage. The application supports dark and light modes, and users can toggle between these modes. There are two main pages: the landing page for submitting blog posts and the posts page for viewing submitted posts.
 
+## Mock-Up
 
+![](./assets/images/BlogPost-Overview.gif)
 
 ## Features
 - Submit blog posts with a username, title, and content.
@@ -19,7 +21,7 @@ This project is a basic blog post application. Users can submit blog posts, whic
 * JavaScript
 
 ## Installation
-There is no installation needed. To access the website [here]()
+There is no installation needed. To access the website [here](https://lolrb.github.io/BlogPost/)
 
 ## Usage
 1. Landing Page:
