@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorMessage = document.getElementById('error-message');
   
     form.addEventListener('submit', (e) => {
-      e.preventDefault(); // Prevent the default form submission behavior
+      e.preventDefault(); // Prevents the default form submission behavior
   
       if (!username.value.trim() || !title.value.trim() || !content.value.trim()) {
         errorMessage.classList.remove('hidden');
       } else {
         errorMessage.classList.add('hidden');
         
-         // Create an object to store blog post data
+         // Creates an object to store blog post data
       const postData = {
         username: username.value.trim(),
         title: title.value.trim(),
@@ -21,19 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
         date: new Date().toLocaleString() // Store submission date
       };
 
-      // Retrieve existing posts from localStorage or initialize an empty array
+      // Retrieves existing posts from localStorage or initialize an empty array
       let posts = JSON.parse(localStorage.getItem('posts')) || [];
 
-      // Add new post data to the array
+      // Adds new post data to the array
       posts.push(postData);
 
-      // Store the updated array back to localStorage
+      // Stores the updated array back to localStorage
       localStorage.setItem('posts', JSON.stringify(posts));
 
-      // Clear form fields after submission
+      // Clears form fields after submission
       form.reset();
 
-      // Redirect to posts.html
+      // Redirects to blog.html
       window.location.href = 'blog.html';
       }
     });
